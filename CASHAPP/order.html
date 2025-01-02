@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashapp-Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(img/greennery.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #006400;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .navbar .hamburger {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .navbar .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar .profile {
+            text-align: right;
+        }
+
+        .navbar .profile h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .navbar .profile p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        #navbar-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        #navbar-links li {
+            display: inline;
+        }
+
+        #navbar-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .navbar .search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .navbar .search-bar button {
+            padding: 5px 10px;
+            background-color: white;
+            color: #006400;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Order Form Section */
+        .order-section {
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            width: 60%;
+            margin: 50px auto;
+        }
+
+        .order-section h2 {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .order-section form label {
+            display: block;
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
+
+        .order-section form input,
+        .order-section form select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .order-section button {
+            padding: 10px 15px;
+            background-color: #006400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .order-section button:hover {
+            background-color: #004d00;
+        }
+
+        /* Order Summary Section */
+        .order-summary {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .order-summary h3 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .order-summary table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .order-summary table th,
+        .order-summary table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .order-summary table th {
+            background-color: #006400;
+            color: white;
+        }
+
+        .order-summary .total-row {
+            font-weight: bold;
+        }
+                .search-bar {
+            padding: 20px;
+            background-color: #0e0301;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .search-bar button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #555;
+        }
+        /* Media query for mobile responsiveness */
+        @media screen and (max-width: 768px) {
+            .navbar ul {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .navbar ul.responsive {
+                display: none;
+            }
+        }
+                .navbar {
+            background-image:url(img/darkgreen.png);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .navbar h1 {
+            margin: 10px;
+            font-size: 41px;
+            color: white;
+            font-family: Helvetica;
+            
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .navbar ul li a:hover {
+            background-color: #fff;
+        }
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .hamburger div {
+            width: 35px; /* Increased width */
+            height: 5px; /* Increased height */
+            background-color: white;
+            margin: 6px 0; /* More spacing */
+        }
+        .navbar ul {
+            display: flex;
+        }
+        .navbar ul.responsive {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: #006400;
+        }
+        .navbar ul.responsive li {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar ul.responsive.show {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+     <div class="navbar">
+        <h1>CASHAPP</h1>
+        
+        <!-- Profile Section in Navbar -->
+        <div class="profile">
+            <h2>Josh Caleb Munsayac</h2>
+            <p>Grade 10-Canva</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul id="navbar-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="order.html">Orders</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for food or stores...">
+                    <button>Search</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Order Form Section -->
+    <center>
+        <section class="order-section">
+            <h2>Finish Your Order</h2>
+            <form id="orderForm">
+			
+                <label for="Room name">Room name:</label>
+                <input type="text" id="Room name" name="Room name" placeholder="Enter your Room name" required>
+
+                <label for="quantity">Quantity of the Product:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                <button type="submit">Add to Order</button>
+            </form>
+        </section>
+    </center>
+
+    <!-- Order Summary Section -->
+    <section class="order-summary">
+        <h3>Order Summary</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="orderTableBody">
+            
+            </tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td colspan="3">Total</td>
+                    <td id="totalPrice">PHP.0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <script>
+        const orderForm = document.getElementById('orderForm');
+        const orderTableBody = document.getElementById('orderTableBody');
+        const totalPriceEl = document.getElementById('totalPrice');
+
+        let total = 0;
+
+        orderForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const product = document.getElementById('product').value;
+            const quantity = parseInt(document.getElementById('quantity').value, 10);
+            const price = {
+                "Apple": 2,
+                "Banana": 1,
+                "Orange": 1.5
+            }[product];
+
+            if (!product || !price || quantity < 1) {
+                alert("Please fill out the form correctly.");
+                return;
+            }
+
+            const subtotal = price * quantity;
+
+            total += subtotal;
+
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${product}</td>
+                <td>${quantity}</td>
+                <td>$${price.toFixed(2)}</td>
+                <td>$${subtotal.toFixed(2)}</td>
+            `;
+            orderTableBody.appendChild(row);
+
+            // Update total price display
+            totalPriceEl.textContent = `$${total.toFixed(2)}`;
+
+            // Reset form
+            orderForm.reset();
+        });
+    </script>
+</body>
+</html>

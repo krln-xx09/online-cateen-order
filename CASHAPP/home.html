@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliveroo (logo)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(img/greennery.jpg); background-repeat: no-repeat; background: background-attachment; fixed;
+             background-size: cover"
+        }
+        /* Navigation Bar Styles */
+        .navbar {
+            background-image:url(img/darkgreen.png);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .navbar h1 {
+            margin: 10px;
+            font-size: 41px;
+            color: white;
+            font-family: Helvetica;
+            
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .navbar ul li a:hover {
+            background-color: #fff;
+        }
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .hamburger div {
+            width: 35px; /* Increased width */
+            height: 5px; /* Increased height */
+            background-color: white;
+            margin: 6px 0; /* More spacing */
+        }
+        .navbar ul {
+            display: flex;
+        }
+        .navbar ul.responsive {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: #006400;
+        }
+        .navbar ul.responsive li {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar ul.responsive.show {
+            display: flex;
+        }
+        /* Profile Section in Navbar */
+        .profile {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .profile h2 {
+            margin: 0;
+            padding-left: 10px;
+            color: white;
+            font-family: verdana;
+            font-weight: 100;
+        }
+        .profile p {
+            margin: 0;
+            padding-left: 10px;
+            color: white;
+            font-family: verdana;
+            font-weight: 100;
+        }
+        .profile h2 {
+            font-size: 27px;
+            font-size: 27px;
+            font-weight: normal;
+            color: white;
+        }
+        .profile p {
+            font-size: 27px;
+            color: white;
+        }
+        /* Popular Stores Section */
+        .popular-stores {
+            padding: 100px;
+        }
+        .popular-stores h3 {
+            margin-bottom: 15px;
+            margin-left: 15px;
+            margin-right: 15x;
+        }
+        .cooperative-stores {
+            padding: 100px;
+        }
+        .cooperative-stores h3 {
+            margin: 0px;
+
+        }
+        .store-item {
+            padding: 50px;
+            border: 2px solid #ddd;
+            margin-bottom: 22px;
+            margin-left: 40px;
+            margin-right: 40px;
+            cursor: pointer;
+            background-color: #ffffff;
+            border-radius: 60px;
+        }
+        .store-item:hover {
+            background-color: #f1f1f1;
+        }
+        /* Search Bar Styles */
+        .search-bar {
+            padding: 20px;
+            background-color: #0e0301;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .search-bar button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #555;
+        }
+        /* Media query for mobile responsiveness */
+        @media screen and (max-width: 768px) {
+            .navbar ul {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .navbar ul.responsive {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body style="background-image: url(img/greennery.jpg); background-repeat: no-repeat; background: background-attachment fixed; 
+             background-size: cover">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>CASHAPP</h1>
+        
+        <!-- Profile Section in Navbar -->
+        <div class="profile">
+            <h2>Josh Caleb Munsayac</h2>
+            <p>Grade 10-Canva</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul id="navbar-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="order.html">Orders</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for food or stores...">
+                    <button>Search</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Popular Stores Section -->
+    <div class="popular-stores" id="popular-stores">
+       <h1>Popular Stores</h1>
+        <div class="store-item" onclick="window.location.href='scs1.html'">
+            <h4>School Canteen Store 1</h4>
+            <p>Click to view menu</p>
+        </div>
+        <div class="store-item" onclick="window.location.href='scs2.html'">
+            <h4>School Canteen Store 2 </h4>
+            <p>Click to view menu</p>
+        </div>
+        <div class="store-item" onclick="window.location.href='scs3.html'">
+            <h4>School Canteen Store 3</h4>
+            <p>Click to view menu</p>
+        </div>
+        <div class="store-item" onclick="window.location.href='scs4.html'">
+            <h4>School Canteen Store 4 </h4>
+            <p>Click to view menu</p>
+        </div>
+        <div class="store-item" onclick="window.location.href='scs5.html'">
+            <h4>School Canteen Store 5 </h4>
+            <p>Click to view menu</p>
+        </div>
+         <div class="store-item" onclick="window.location.href='scs6.html'">
+            <h4>School Canteen Store 6 </h4>
+            <p>Click to view menu</p>
+        </div>
+    </div>
+    
+    <div class="cooperative-stores" id="cooperative-stores">
+       <h1>Cooperative Stores </h1>
+        <div class="store-item" onclick="window.location.href='coop1.html'">
+            <h4>COOP Store 1</h4>
+            <p>Click to view menu</p>
+        </div>
+        <div class="store-item" onclick="window.location.href='coop2.html'">
+            <h4>COOP Store 2 </h4>
+            <p>Click to view menu</p>
+        </div>
+        <div class="store-item" onclick="window.location.href='coop3.html'">
+            <h4>COOP Store 3</h4>
+            <p>Click to view menu</p>
+        </div>
+    </div>
+
+     <div class="cooperative-stores" id="cooperative-stores">
+       <h1>Greenhills Canteen </h1>
+        <div class="store-item" onclick="window.location.href='coop1.html'">
+            <h4>Greenhills Store 1</h4>
+            <p>Click to view menu</p>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("navbar-links");
+            if (x.className === "") {
+                x.className = "responsive show";
+            } else {
+                x.className = "";
+            }
+        }
+    </script>
+</body>
+</html>

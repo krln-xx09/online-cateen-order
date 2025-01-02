@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store 1</title>
+    <link rel="stylesheet" type="text/css" href="Writers%20stylesheet.css">
+    <style>
+        .navbar {
+            background-image: url(img/darkgreen.png);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .navbar h1 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 28px;
+                        font-family: Helvetica;
+
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .navbar ul li a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .hamburger div {
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 6px 0;
+        }
+        .navbar ul.responsive {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: #006400;
+        }
+        .navbar ul.responsive.show {
+            display: flex;
+        }
+        /* Profile Section */
+        .profile {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+        }
+        .profile h2, .profile p {
+            margin: 0;
+            padding-left: 10px;
+                        font-family: verdana;
+
+        }
+        .profile h2 {
+            font-size: 27px;
+            font-weight: normal;
+        }
+        .clm {
+            background-color: #ECECEC; 
+            width: 365px; 
+            padding: 10px; 
+            float: left;
+            margin: 29px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            box-shadow: 0px 3px 8px #000;
+            transition: all 300ms ease-in-out;
+        }
+        .clm:hover {
+            background-color: #D8F2FF;
+            box-shadow: 0px 10px 20px #222;
+        }
+        .text {
+            font-size: 12px;
+            padding-left: 10px;
+        }
+        .text:hover {
+            color: #00BDFE;
+            text-decoration: underline;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body style="background-image: url(img/greennery.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover">
+    <div class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>CASHAPP</h1>
+        
+        <div class="profile">
+            <h2>Josh Caleb Munsayac</h2> <p>Grade 10 - Canva A</p>
+        </div>
+
+        <ul id="navbar-links">
+               <li><a href="home.html">Home</a></li>
+            <li><a href="order.html">Orders</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for food or stores...">
+                    <button>Search</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Book items here -->
+    <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/ballp.webp" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Ballpens</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 10.00</h4>
+            </nav>
+        </div>
+    </div>
+    <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/faber.webp" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Faber Castle ballpen</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 15.00</h4>
+            </nav>
+        </div>
+    </div>
+    <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/pencil.webp" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Pencil</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 10.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/highl.webp" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Highliter (any color)</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 20.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/jiawei.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;"> Jiawei Highliters</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 40.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/colorp.webp" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Color Pen</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 35.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/pantasa.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Sharpener</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 5.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/eraser.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Eraser</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 5.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/neon.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Neon Colored Pen</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 10.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/marker.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Marker</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 10.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/HBW.png" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">HBW</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 15.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/HBWW.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Permanent Marker</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 15.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/whiteboardmarker.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">White Board Marker</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 15.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/magnetic.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Magnetic Whiteboard Eraser</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 25.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/miniereaser.jpeg"  class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Mini Blackboard Eraser</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 15.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/filler.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Filler Notebook</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 20.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/tahi.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Pixel Spring and Tahi</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 25.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/pinnaclenote.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Pinnacle Notes</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 45.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/exellent.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Excellent Spiral Notebook</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 45.00</h4>
+            </nav>
+        </div>
+    </div> <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/spring.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Spring</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 45.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/fir.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Daily Demo Notebook</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 20.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/stick.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Sticky Notes</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 25.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/stickapple.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Sticky Notes(apple)</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 25.00</h4>
+            </nav>
+        </div>
+    </div>
+    <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/stickbutterfly.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Sticky Notes(butterfly)</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 25.00</h4>
+            </nav>
+        </div>
+    </div>
+    <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/stickleaf.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Sticky Notes(leaf)</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 25.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/doublesided1.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Double Sided(1cm)</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 20.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/doublesided2.5.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Double Sided(2.5cm)</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 35.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/maskingtape.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Masking Tape</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 25.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/stationartytape.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Stationary Tape</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 6.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/cleartape.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Clear Tape</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 25.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/packingtape.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Packing Tape</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 35.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/ruler.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Ruler</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 10.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/cutters.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">cutter(small)</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 5.00</h4>
+            </nav>
+        </div>
+    </div>
+    <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/cutterb.jpeg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">cutter(big)</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 10.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/protractore.webp" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;"> Protractor</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 10.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/mini.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 26px;">Calculator(mini)</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 60.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/calc.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Scientific Calculator</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 200.00</h4>
+            </nav>
+        </div>
+    </div>
+     <div class="clm">
+        <a href="Harry%20Potter%20and%20the%1Philosophers%20Stone.html">
+            <img src="img/fastener.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Fastener </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 2.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/whiteglue.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">White Glue </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 10.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/paste.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Paste </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 3.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/blam.webp" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Glue Stick(balm) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 20.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/sticka.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Glue Stick(s) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 5.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/stickb.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Glue Stick(b) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 10.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/correct2.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Correction Tape(s) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 20.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/correct.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Correction Tape(b) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 35.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/compass.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 21px;">Compass(pambilog) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 15.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/yarn.webp" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Yarn </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 15.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/watercolor.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Paint Watercolor </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 25.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/poster2.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Poster Color(s) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 10.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/poster2.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Poster Color(b) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 20.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/clay.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Clay </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 20.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/crayola2.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Crayola(8pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 35.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/crayola1.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Crayola(16pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 65.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/joy8.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Joy(8pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 15.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/joy2.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Joy colors(16) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 300.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/12pencils.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Color Pencil(12pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 35.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/8pcs.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Oil Pastel(8pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 40.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/pastel.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Oil Pastel(12pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 50.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/popscicle.png" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Popscicle Stick </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 15.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/12pcs.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Colored Chalk(12pcs)</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 25.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/3pcs.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Colored Chalk(3pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 5.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/pinss.webp" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Push Pin(50pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 20.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/clip.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Paper Clips(2pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 1.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/staples.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Staples </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 35.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/joy.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Joy Stapler </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 40.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/clip.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Paper Clip </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 5.00</h4>
+            </nav>
+        </div>
+    </div>
+      <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/expanded.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Expanded Envelope </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 20.00</h4>
+            </nav>
+        </div>
+    </div>  <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/victory.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Pad Paper(Victory) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 45.00</h4>
+            </nav>
+        </div>
+    </div>  <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/atlantic.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Pad Paper(Atlantic) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 30.00</h4>
+            </nav>
+        </div>
+    </div>  <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/mica.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Pad Paper(Mica) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 40.00</h4>
+            </nav>
+        </div>
+    </div>  <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/lengthwise.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Lengthwise </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 15.00</h4>
+            </nav>
+        </div>
+    </div>  <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/crosswise.webp" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Crosswise </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 15.00</h4>
+            </nav>
+        </div>
+    </div>  <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/manila.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Manila Paper </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 7.00</h4>
+            </nav>
+        </div>
+    </div>  <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/bondpaper.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 26px;">Bondpaper(3pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 5.00</h4>
+            </nav>
+        </div>
+    </div>  <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/colored.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Colored Paper(3pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 5.00</h4>
+            </nav>
+        </div>
+    </div>  <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/oslo.png" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Oslo Paper(3pcs) </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 5.00</h4>
+            </nav>
+        </div>
+    </div>  <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/cartolina.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Cartolina </h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 8.00</h4>
+            </nav>
+        </div>
+    </div>  
+    
+    <!-- Repeat similar structure for other book items -->
+
+    <script>
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbar-links');
+            navbarLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

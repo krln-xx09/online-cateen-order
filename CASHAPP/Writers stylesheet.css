@@ -1,0 +1,20 @@
+/* header */
+.col-1{
+    text-align: center;
+}
+p{
+    text-align: left; 
+    font-size: 17px; 
+    font-family: cursive; 
+    margin-left: 1em;
+    margin-right: 24em
+}
+.philosopherstone{
+     width:170px;
+    height:220px;
+    margin: 0px 1px 1px 1.5px;
+    transition: transform .3s;      
+}
+.philosopherstone:hover{
+    transform: scale(1.1);
+}

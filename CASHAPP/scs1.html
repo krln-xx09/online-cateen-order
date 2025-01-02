@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store 1</title>
+    <link rel="stylesheet" type="text/css" href="Writers%20stylesheet.css">
+    <style>
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(img/greennery.jpg); background-repeat: no-repeat; background; background-attachment: fixed; 
+             background-size: cover"
+        }
+        /* Navigation Bar Styles */
+        .navbar {
+            background-image:url(img/darkgreen.png);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 31px;
+            color: white
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .navbar ul li a:hover {
+            background-color: #fff;
+        }
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .hamburger div {
+            width: 35px; /* Increased width */
+            height: 5px; /* Increased height */
+            background-color: white;
+            margin: 6px 0; /* More spacing */
+        }
+        .navbar ul {
+            display: flex;
+        }
+        .navbar ul.responsive {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: #006400;
+        }
+        .navbar ul.responsive li {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar ul.responsive.show {
+            display: flex;
+        }
+        /* Profile Section in Navbar */
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile h2, .profile p {
+            margin: 0;
+            padding-left: 10px;
+        }
+        .profile h2 {
+            font-size: 27px;
+            font-size: 27px;
+            font-weight: normal;
+            color: aliceblue
+        }
+        .profile p {
+            font-size: 20px;
+            color:aliceblue;
+            font-family: verdana;
+        }
+        .clm {
+            background-color: #D1F3C5;
+            width: 365px;
+            padding: 10px;
+            float: left;
+            margin: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            box-shadow: 0px 3px 8px #000;
+            transition: all 300ms ease-in-out;
+            border: solid;
+            border-radius: 1rem;
+            border-width: thin;
+        }
+        .clm:hover {
+            background-color: #D8F2FF;
+            box-shadow: 0px 10px 20px #222;
+        }
+        .text {
+            font-size: 12px;
+            padding-left: 10px;
+            font-size: small
+        }
+        .text:hover {
+            color: #00BDFE;
+            text-decoration: underline;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body style="background-image: url(img/greennery.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover">
+    <div class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>CASHAPP</h1>
+        
+        <div class="profile">
+            <h2>Josh Caleb Munsayac</h2> <p>Grade 10 - Canva A</p>
+        </div>
+
+        <ul id="navbar-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="order.html">Orders</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for food or stores...">
+                    <button>Search</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Book items here -->
+    <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/palabok.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Palabok</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 30.00</h4>
+            </nav>
+        </div>
+    </div>
+    <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/mac.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Bake Mac</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 30.00</h4>
+            </nav>
+        </div>
+    </div>
+    <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/spag.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Spaghetti</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 30.00</h4>
+            </nav>
+        </div>
+    </div>
+    <div class="clm">
+        <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html">
+            <img src="img/carb.jpg" class="philosopherstone">
+        </a>
+        <div class="text">
+            <a href="Harry%20Potter%20and%20the%20Philosophers%20Stone.html" style="color: black;">
+                <h2 style="color: black; font-size: 30px;">Carbonara</h2>
+            </a>
+            <hr> 
+            <nav style="background-color: #D4D4D4; color: black; border-radius: 1rem; text-align: center; font-size: 25px;">
+                <h4 style="color: black;">Php 30.00</h4>
+            </nav>
+        </div>
+    </div>
+    <!-- Repeat similar structure for other book items -->
+
+    <script>
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbar-links');
+            navbarLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
